@@ -1,33 +1,24 @@
 package unidad1;
-import java.util.Scanner;
-
 public class Tienda {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        // Precios originales
+        double camiseta = 25;
+        double pantalon = 30;
 
-        // Pedir precios al usuario
-        System.out.println("Ingrese el valor de la camiseta: ");
-        double camiseta = scanner.nextDouble();
+        // Aplicar 15% de descuento
+        double camisetaConDescuento = camiseta - (camiseta * 0.15);
+        double pantalonConDescuento = pantalon - (pantalon * 0.15);
 
-        System.out.println("Ingrese el valor del pantalon: ");
-        double pantalon = scanner.nextDouble();
+        // Segunda camiseta con 5% adicional sobre el precio ya descontado
+        double segundaCamiseta = camisetaConDescuento - (camisetaConDescuento * 0.05);
 
-        // Descuento del 15% a cada prenda
-        camiseta = camiseta - (camiseta * 0.15);
-        pantalon = pantalon - (pantalon * 0.15);
+        // Precio total
+        double total = camisetaConDescuento + pantalonConDescuento + segundaCamiseta;
 
-        // Segunda camiseta con 5% adicional
-        double segundaCamiseta = camiseta - (camiseta * 0.05);
-
-        // Total a pagar
-        double total = camiseta + pantalon + segundaCamiseta;
-
-        // Mostrar resultados de manera simple
-        System.out.println("Precio final de la primera camiseta: " + camiseta);
-        System.out.println("Precio final del pantalon: " + pantalon);
-        System.out.println("Precio  de la segunda camiseta: " + segundaCamiseta);
-        System.out.println("El total a pagar es: " + total);
-
-        scanner.close();
+        // Mostrar resultado
+        System.out.println("El precio de la primera camiseta : " + camisetaConDescuento);
+        System.out.println("El precio del pantalon : " + pantalonConDescuento);
+        System.out.println("El precio de la segunda camiseta : " + segundaCamiseta);
+        System.out.println("El precio total a pagar es: " + total);
     }
 }
