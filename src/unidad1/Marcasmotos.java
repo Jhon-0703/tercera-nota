@@ -17,7 +17,7 @@ public class Marcasmotos {
         };
         System.out.println("Listado de motos:");
         for (int i = 0; i < motos.length; i++) {
-            System.out.println((i + 1) + ". " + motos[i]);
+            System.out.println((i + 1) + ") " + motos[i]);
         }
     }
 
