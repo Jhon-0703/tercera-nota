@@ -1,8 +1,5 @@
 {
-    "java.project.sourcePaths": [
-        "src",
-        "tercera-nota"
-    ],
+    "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
