@@ -8,7 +8,7 @@ public class ContadordePares {
             if (i % 2 == 0) {
              contador++;
             }
-        }
+        } 
         System.out.println("Los números pares entre el 1 y el 100 son: " + contador);
     }
 }
