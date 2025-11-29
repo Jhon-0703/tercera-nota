@@ -1,7 +1,7 @@
-package unidad1.unidad2;
+package unidad2;
 
-public class EjercicioTiposPrimitivos {
-    public static void main(String[] args) {
+public class EjercicioTiposPrimitivo {
+     public static void main(String[] args) {
         int numero = 5;
         cambiarValor(numero);
         System.out.println("Después de llamar a cambiarValor: " + numero);  // Imprime 5
@@ -13,3 +13,5 @@ public class EjercicioTiposPrimitivos {
     }
 }
 
+
+    
